@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!-- =================== User登录 =================== -->
+    <servlet>
+        <servlet-name>userLogin</servlet-name>
+        <servlet-class>com.zhiyou.servlet.User.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userLogin</servlet-name>
+        <url-pattern>/user/login</url-pattern>
+    </servlet-mapping>
+<!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!-- =================== house添加 =================== -->
+    <servlet>
+        <servlet-name>houseAdd</servlet-name>
+        <servlet-class>com.zhiyou.servlet.house.HouseAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>houseAdd</servlet-name>
+        <url-pattern>/house/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== house删除 =================== -->
+    <servlet>
+        <servlet-name>houseDelete</servlet-name>
+        <servlet-class>com.zhiyou.servlet.house.HouseDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>houseDelete</servlet-name>
+        <url-pattern>/house/delete</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== house详情 =================== -->
+    <servlet>
+        <servlet-name>houseDetail</servlet-name>
+        <servlet-class>com.zhiyou.servlet.house.HouseDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>houseDetail</servlet-name>
+        <url-pattern>/house/detail</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== house更新 =================== -->
+    <servlet>
+        <servlet-name>houseUpdate</servlet-name>
+        <servlet-class>com.zhiyou.servlet.house.HouseUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>houseUpdate</servlet-name>
+        <url-pattern>/house/update</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== house查询全部 =================== -->
+    <servlet>
+        <servlet-name>houseList</servlet-name>
+        <servlet-class>com.zhiyou.servlet.house.HouseListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>houseList</servlet-name>
+        <url-pattern>/house/list</url-pattern>
+    </servlet-mapping>
+
+<!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <!-- =================== contract详情 =================== -->
+    <servlet>
+        <servlet-name>contractUpdate</servlet-name>
+        <servlet-class>com.zhiyou.servlet.contract.ContractUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contractUpdate</servlet-name>
+        <url-pattern>/contract/update</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== contract更新 =================== -->
+    <servlet>
+        <servlet-name>contractDetail</servlet-name>
+        <servlet-class>com.zhiyou.servlet.contract.ContractDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contractDetail</servlet-name>
+        <url-pattern>/contract/detail</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== contract删除 =================== -->
+    <servlet>
+        <servlet-name>contractDelete</servlet-name>
+        <servlet-class>com.zhiyou.servlet.contract.ContractDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contractDelete</servlet-name>
+        <url-pattern>/contract/delete</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== contract添加 =================== -->
+    <servlet>
+        <servlet-name>contractAdd</servlet-name>
+        <servlet-class>com.zhiyou.servlet.contract.ContractAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contractAdd</servlet-name>
+        <url-pattern>/contract/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== contract查询全部 =================== -->
+    <servlet>
+        <servlet-name>contractList</servlet-name>
+        <servlet-class>com.zhiyou.servlet.contract.ContractListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contractList</servlet-name>
+        <url-pattern>/contract/list</url-pattern>
+    </servlet-mapping>
+
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <!-- =================== lessee详情 =================== -->
+    <servlet>
+        <servlet-name>lesseeUpdate</servlet-name>
+        <servlet-class>com.zhiyou.servlet.lessee.LesseeUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lesseeUpdate</servlet-name>
+        <url-pattern>/lessee/update</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== lessee更新 =================== -->
+    <servlet>
+        <servlet-name>lesseeDetail</servlet-name>
+        <servlet-class>com.zhiyou.servlet.lessee.LesseeDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lesseeDetail</servlet-name>
+        <url-pattern>/lessee/detail</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== lessee删除 =================== -->
+    <servlet>
+        <servlet-name>lesseeDelete</servlet-name>
+        <servlet-class>com.zhiyou.servlet.lessee.LesseeDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lesseeDelete</servlet-name>
+        <url-pattern>/lessee/delete</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== lessee添加 =================== -->
+    <servlet>
+        <servlet-name>lesseeAdd</servlet-name>
+        <servlet-class>com.zhiyou.servlet.lessee.LesseeAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lesseeAdd</servlet-name>
+        <url-pattern>/lessee/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== lessee查询全部 =================== -->
+    <servlet>
+        <servlet-name>lesseeList</servlet-name>
+        <servlet-class>com.zhiyou.servlet.lessee.LesseeListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lesseeList</servlet-name>
+        <url-pattern>/lessee/list</url-pattern>
+    </servlet-mapping>
+
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <!-- =================== rent详情 =================== -->
+    <servlet>
+        <servlet-name>rentUpdate</servlet-name>
+        <servlet-class>com.zhiyou.servlet.rent.RentUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rentUpdate</servlet-name>
+        <url-pattern>/rent/update</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== rent更新 =================== -->
+    <servlet>
+        <servlet-name>rentDetail</servlet-name>
+        <servlet-class>com.zhiyou.servlet.rent.RentDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rentDetail</servlet-name>
+        <url-pattern>/rent/detail</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== rent删除 =================== -->
+    <servlet>
+        <servlet-name>rentDelete</servlet-name>
+        <servlet-class>com.zhiyou.servlet.rent.RentDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rentDelete</servlet-name>
+        <url-pattern>/rent/delete</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== rent添加 =================== -->
+    <servlet>
+        <servlet-name>rentAdd</servlet-name>
+        <servlet-class>com.zhiyou.servlet.rent.RentAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rentAdd</servlet-name>
+        <url-pattern>/rent/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== rent查询全部 =================== -->
+    <servlet>
+        <servlet-name>rentList</servlet-name>
+        <servlet-class>com.zhiyou.servlet.rent.RentListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rentList</servlet-name>
+        <url-pattern>/rent/list</url-pattern>
+    </servlet-mapping>
+
+    <!-- =================== UserAdmin查询全部 =================== -->
+    <servlet>
+        <servlet-name>userAdmin</servlet-name>
+        <servlet-class>com.zhiyou.servlet.admin.UserAdminList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userAdmin</servlet-name>
+        <url-pattern>/admin/list</url-pattern>
+    </servlet-mapping>
+<!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 权限拦截 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <filter>
+        <filter-name>authFilter</filter-name>
+        <filter-class>com.zhiyou.servlet.filter.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <!--员工的权限 -> 添加 更新-->
+        <url-pattern>/contract/update</url-pattern>
+        <url-pattern>/house/update</url-pattern>
+        <url-pattern>/lessee/update</url-pattern>
+        <url-pattern>/rent/update</url-pattern>
+
+        <url-pattern>/contract/add</url-pattern>
+        <url-pattern>/house/add</url-pattern>
+        <url-pattern>/lessee/add</url-pattern>
+        <url-pattern>/rent/add</url-pattern>
+
+        <!--经理的权限 -> 删除-->
+        <url-pattern>/contract/delete</url-pattern>
+        <url-pattern>/house/delete</url-pattern>
+        <url-pattern>/lessee/delete</url-pattern>
+        <url-pattern>/rent/delete</url-pattern>
+    </filter-mapping>
+
+    <!--============================= 编码格式拦截 =============================-->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>com.zhiyou.servlet.filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--============================= 登陆拦截 =============================-->
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.zhiyou.servlet.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/contract/list</url-pattern>
+        <url-pattern>/contract/delete</url-pattern>
+        <url-pattern>/contract/update</url-pattern>
+        <url-pattern>/contract/detail</url-pattern>
+
+        <url-pattern>/house/list</url-pattern>
+        <url-pattern>/house/delete</url-pattern>
+        <url-pattern>/house/update</url-pattern>
+        <url-pattern>/house/detail</url-pattern>
+
+        <url-pattern>/lessee/list</url-pattern>
+        <url-pattern>/lessee/delete</url-pattern>
+        <url-pattern>/lessee/update</url-pattern>
+        <url-pattern>/lessee/detail</url-pattern>
+
+        <url-pattern>/rent/list</url-pattern>
+        <url-pattern>/rent/delete</url-pattern>
+        <url-pattern>/rent/update</url-pattern>
+        <url-pattern>/rent/detail</url-pattern>
+    </filter-mapping>
+</web-app>
